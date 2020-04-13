@@ -5,6 +5,10 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: beige;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;  
 }
 
 .information {
@@ -36,14 +40,21 @@ body {
     display: inline-block;
     text-align: center;
     margin-top: 50px;
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: darkorange; /* Green */
+    border: solid 2px darkorange;
+    border-radius: 20px;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+    transition-delay: 0.1s;  
+}
+
+.clear-button:hover {
+    background-color: white;
+    color: darkorange;
 }
 
 
@@ -53,7 +64,6 @@ body {
     align-content: center;
     justify-content: center;
     margin-top: 50px;
-    background-color: aqua;
     border: solid 20px black;
 }
 

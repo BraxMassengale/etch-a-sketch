@@ -23,7 +23,7 @@ function createGrid(num) {
             console.log(cellHeight)
             let cell = document.createElement("div");
             cell.className = "gridsquare";
-            cell.innerText = (i * num) + j;
+            cell.innerText = "";
             cell.style.height = cellHeight;
             cell.style.width = cellWidth;
             cell.addEventListener("mouseenter", (event) => {
